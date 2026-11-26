@@ -1,6 +1,6 @@
 # Inadimplência em crédito consignado
 
-Dashboard interativo desenvolvido em Streamlit para o Projeto 2, Grupo 3.
+Dashboard interativo desenvolvido em Streamlit para o Projeto 2, Grupo 3, da disciplina de Processamento e Visualização de Dados
 
 ## Integrantes
 
@@ -14,12 +14,6 @@ Dashboard interativo desenvolvido em Streamlit para o Projeto 2, Grupo 3.
 python -m pip install -r requirements.txt
 streamlit run app.py
 ```
-
-## Publicar no Streamlit Community Cloud
-
-1. Envie este diretório para um repositório público no GitHub.
-2. Em Streamlit Community Cloud, conecte o repositório e selecione `app.py`.
-3. O aplicativo lê `inadimplencia_consignado.csv` incluído neste projeto.
 
 ## Dados
 
