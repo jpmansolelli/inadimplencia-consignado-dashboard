@@ -1,6 +1,10 @@
 # Inadimplência em crédito consignado
 
-Dashboard interativo desenvolvido em Streamlit para o Projeto 2, Grupo 3, da disciplina de Processamento e Visualização de Dados
+Dashboard interativo em Streamlit desenvolvido para o Projeto 2, Grupo 3.
+
+**Dashboard público:** [abrir o painel](https://inadimplencia-consignado-dashboard-gvxfjzdjg4xyf65qee79dw.streamlit.app/)  
+**Repositório do projeto:** [jpmansolelli/inadimplencia-consignado-dashboard](https://github.com/jpmansolelli/inadimplencia-consignado-dashboard)  
+**Download da base CSV:** [inadimplencia_consignado.csv](https://raw.githubusercontent.com/jpmansolelli/inadimplencia-consignado-dashboard/main/inadimplencia_consignado.csv)
 
 ## Integrantes
 
@@ -15,8 +19,10 @@ python -m pip install -r requirements.txt
 streamlit run app.py
 ```
 
-## Dados
+## Dados e método
 
-O projeto usa os 50.000 registros do arquivo distribuído com o material do Projeto 2. Cada linha representa um contrato e `inadimplente = 1` indica atraso superior a 90 dias nos 12 meses seguintes à contratação. Não foi feita exclusão de linhas ou imputação de dados; o aplicativo calcula as estatísticas sobre o recorte indicado pelos filtros.
+A base acompanha o material do Projeto 2 e contém 50.000 contratos, 17 colunas e contratações entre 01/01/2023 e 30/06/2025. Cada linha representa um contrato; `inadimplente = 1` indica atraso superior a 90 dias nos 12 meses seguintes à contratação.
 
-Os resultados são descritivos e mostram associações. Eles não identificam causas nem devem ser interpretados como avaliação de risco para decisões individuais.
+Não foram removidas linhas nem imputados valores. O app converte a data de contratação para data e agrega os registros para as visualizações. Os filtros afetam todos os gráficos e a tabela. Os resultados são descritivos; diferenças observadas não demonstram causalidade nem devem ser usadas para decisões individuais de crédito.
+
+
