@@ -25,8 +25,8 @@ st.markdown(
     """
     <style>
     .block-container {padding-top: 2rem; padding-bottom: 3rem; max-width: 1440px;}
-    [data-testid="stMetric"] {background: #f5f7fa; border: 1px solid #e5e9ef; padding: 16px 18px; border-radius: 12px;}
-    [data-testid="stMetricLabel"] {color: #506174;}
+    [data-testid="stMetric"] {background: #f5f7fa; color: #182331; border: 1px solid #e5e9ef; padding: 16px 18px; border-radius: 12px;}
+    [data-testid="stMetricLabel"], [data-testid="stMetricValue"], [data-testid="stMetricDelta"] {color: #182331 !important;}
     h1, h2, h3 {letter-spacing: -0.02em;}
     </style>
     """,
@@ -162,3 +162,4 @@ with st.expander("Sobre os dados e os gráficos"):
     st.write("Base simulada de contratos de crédito consignado. O indicador inadimplente vale 1 quando houve atraso superior a 90 dias nos 12 meses seguintes à contratação. A taxa é calculada por contagem de contratos, sem ponderação pelo valor emprestado.")
     st.write("Fonte: arquivo distribuído para o Projeto 2, `inadimplencia_consignado.csv` (50.000 contratos; 17 colunas; 01/01/2023 a 30/06/2025).")
     st.write("Integrantes: Joao Victor Dumont Mauad · João Pedro Mansolelli · Rennan Destefani Siqueira Lopes")
+
